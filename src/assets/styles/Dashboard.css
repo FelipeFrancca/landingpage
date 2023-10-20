@@ -9,6 +9,7 @@
     width: 10vw;
     position: fixed;
     right: 0;
+    padding-right: 2rem;
     padding-top: 2rem;
 }
 .containerTop img {
@@ -25,4 +26,9 @@
 }
 .containerBottom img {
     width: 3.5rem;
+}
+@media screen and (max-width: 800) {
+    .containerBottom {
+        padding-left: 3rem;
+    }
 }
