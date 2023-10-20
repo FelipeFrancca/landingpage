@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.containerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10vw;
+    position: fixed;
+    right: 0;
+    padding-top: 2rem;
+}
+.containerTop img {
+    width: 4.5rem;
+}
+.containerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.containerBottom img {
+    width: 3.5rem;
+}
