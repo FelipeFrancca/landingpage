@@ -10,17 +10,17 @@ export default function dashboard() {
   return (
     <Box className="container">
       <Box className="containerTop">
-      <a href="https://web.whatsapp.com">
-          <img src={logoTopo} alt="logoTopo image" />
+      <a href="/">
+          <img src={logoTopo} alt="logoTopo" />
         </a>
       </Box>
 
       <Box className="containerBottom">
-        <a href="https://web.whatsapp.com">
-          <img src={email} alt="E-mail image" />
+        <a href="mailto:profissional.felipesouza@gmail.com">
+          <img src={email} alt="E-mail" />
         </a>
-        <a href="https://web.whatsapp.com">
-          <img src={whatsapp} alt="Whatsapp image" />
+        <a href="https://api.whatsapp.com/send?phone=558487450440">
+          <img src={whatsapp} alt="Whatsapp" />
         </a>
       </Box>
     </Box>
