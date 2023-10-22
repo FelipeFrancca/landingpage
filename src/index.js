@@ -5,6 +5,20 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
+const bgMoviment = document.querySelectorAll('body');
+bgMoviment.forEach(bgMoviment => {
+  bgMoviment.addEventListener('mousemove', (e) => {
+    const react = bgMoviment.getBoundingClientRect();
+
+    const left = e.clientX - react.left;
+    const top = e.clientY - react.top;
+
+    bgMoviment.style.setProperty("--left", `${left}px`);
+    bgMoviment.style.setProperty("--top", `${top}px`);
+
+  });
+});
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
