@@ -5,6 +5,7 @@ import "../../assets/styles/Dashboard.css";
 import logoTopo from "../../assets/images/icons/fTitle.png";
 import email from "../../assets/images/icons/mail.png";
 import whatsapp from "../../assets/images/icons/wpp.png";
+import { Outlet } from "react-router-dom";
 
 export default function dashboard() {
   return (
@@ -13,6 +14,10 @@ export default function dashboard() {
       <a href="/">
           <img src={logoTopo} alt="logoTopo" />
         </a>
+      </Box>
+      
+      <Box className="homeContainer">
+      <Outlet/>
       </Box>
 
       <Box className="containerBottom">

@@ -27,6 +27,11 @@
 .containerBottom img {
     width: 3.5rem;
 }
+
+.homeContainer {
+    padding: 7rem;
+}
+
 @media screen and (max-width: 800) {
     .containerBottom {
         padding-left: 3rem;
