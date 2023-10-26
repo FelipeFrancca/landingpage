@@ -9,24 +9,24 @@ import { Outlet } from "react-router-dom";
 
 export default function dashboard() {
   return (
-    <Box className="container">
-      <Box className="containerTop">
-      <a href="/">
-          <img src={logoTopo} alt="logoTopo" />
-        </a>
-      </Box>
-      
-      <Box className="homeContainer">
-      <Outlet/>
-      </Box>
-
+    <Box>
+      <Box className="container">
       <Box className="containerBottom">
-        <a href="mailto:profissional.felipesouza@gmail.com">
-          <img src={email} alt="E-mail" />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=558487450440">
-          <img src={whatsapp} alt="Whatsapp" />
-        </a>
+          <a href="mailto:profissional.felipesouza@gmail.com">
+            <img src={email} alt="E-mail" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=558487450440">
+            <img src={whatsapp} alt="Whatsapp" />
+          </a>
+        </Box>
+        <Box className="containerTop">
+          <a href="/">
+            <img src={logoTopo} alt="logoTopo" />
+          </a>
+        </Box>
+      </Box>
+      <Box className="homeContainer">
+        <Outlet />
       </Box>
     </Box>
   );
