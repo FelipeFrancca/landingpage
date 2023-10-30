@@ -2,35 +2,39 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import "../../../assets/styles/home.css";
 
+
 import UpArrow from "@mui/icons-material/KeyboardDoubleArrowUp";
 
 export default function Home() {
   return (
     <Box className="homeConteiner">
-      <Typography variant="h5" fontWeight={400}>
-        Felipe França
-      </Typography>
-      <br />
-      <Typography variant="h2" fontWeight={700}>
-        Desenvolvedor especializado
+      <Box className='presentation'>
+        <Typography variant="h5" letterSpacing={3} fontWeight={400}>
+          Felipe França
+        </Typography>
         <br />
-        em interface e expeciência do usuário
-      </Typography>
-      <br />
-      <Typography variant="h5" fontWeight={400}>
-        Construção de aplicações web com as frameworks React e TypeScript <br />
-        que permitem criar interfaces bonitas e responsivas para qualquer
-        dispositivo. <br />
-        Proeficiência em PHP e laravel, que possibilita desenvolver sistemas
-        robustos e escaláveis, <br />
-        atendendo às necessidades complexas e garantindo a segurança.
-      </Typography>
+        <Typography fontSize='3.875rem' lineHeight='4.0625rem' letterSpacing={2} fontWeight={900}>
+          Dev. especializado em
+          <br />
+          interface e expeciência do usuário
+        </Typography>
+        <br />
+        <Typography variant="h5" letterSpacing={2} fontWeight={400}>
+          Construção de aplicações web com as frameworks React e TypeScript
+          <br />
+          que permitem criar interfaces bonitas e responsivas para qualquer
+          dispositivo. <br />
+          Proeficiência em PHP e laravel, que possibilita desenvolver sistemas
+          robustos e escaláveis, <br />
+          atendendo às necessidades complexas e garantindo a segurança.
+        </Typography>
+      </Box>
       <Box className="topicContainer">
-        <Typography variant="h6" fontWeight={400}>
+        <Typography variant="h6" letterSpacing={2} fontWeight={400}>
           Linguagens de programação
         </Typography>
         <br />
-        <Typography variant="h2" fontWeight={700}>
+        <Typography variant="h2" letterSpacing={2} fontWeight={700}>
           Área de estudos
         </Typography>
       </Box>
@@ -39,6 +43,14 @@ export default function Home() {
       <Box className="upArrow">
         <UpArrow className="upArrow2" />
       </Box>
+      <Box className="">
+
+      <Box className="">
+        
+        </Box>
+
+      </Box>
+
     </Box>
   );
 }

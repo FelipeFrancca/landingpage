@@ -11,7 +11,7 @@ export default function dashboard() {
   return (
     <Box>
       <Box className="container">
-      <Box className="containerBottom">
+        <Box className="containerSocial">
           <a href="mailto:profissional.felipesouza@gmail.com">
             <img src={email} alt="E-mail" />
           </a>

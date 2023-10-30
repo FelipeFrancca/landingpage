@@ -14,22 +14,21 @@
 .containerTop img {
     width: 5rem;
 }
-.containerBottom {
+.containerSocial {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 10vw;
 }
-.containerBottom img {
+.containerSocial img {
     width: 3.5rem;
 }
 
-.homeContainer {
-    padding: 7rem;
-}
-
-@media screen and (max-width: 800) {
-    .containerBottom {
-        padding-left: 3rem;
+@media screen and (max-width: 800px) {
+    .containerTop {
+        padding-right: 1rem;
+    }
+    .containerSocial {
+        padding-left: 2rem;
     }
 }
