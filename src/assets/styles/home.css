@@ -28,6 +28,25 @@
   animation: text-shadow-pop-bottom 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045)
     infinite alternate both;
 }
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+@media screen and (max-width: 800px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @-webkit-keyframes text-shadow-pop-bottom {
   0% {

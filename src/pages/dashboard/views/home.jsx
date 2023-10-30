@@ -2,18 +2,23 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import "../../../assets/styles/home.css";
 
-
 import UpArrow from "@mui/icons-material/KeyboardDoubleArrowUp";
+import Card from "./components/card";
 
 export default function Home() {
   return (
     <Box className="homeConteiner">
-      <Box className='presentation'>
+      <Box className="presentation">
         <Typography variant="h5" letterSpacing={3} fontWeight={400}>
           Felipe França
         </Typography>
         <br />
-        <Typography fontSize='3.875rem' lineHeight='4.0625rem' letterSpacing={2} fontWeight={900}>
+        <Typography
+          fontSize="3.875rem"
+          lineHeight="4.0625rem"
+          letterSpacing={2}
+          fontWeight={900}
+        >
           Dev. especializado em
           <br />
           interface e expeciência do usuário
@@ -43,14 +48,14 @@ export default function Home() {
       <Box className="upArrow">
         <UpArrow className="upArrow2" />
       </Box>
-      <Box className="">
-
-      <Box className="">
-        
+      <Box className="cardsContainer">
+        <Box className="cards">
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
         </Box>
-
       </Box>
-
     </Box>
   );
 }
