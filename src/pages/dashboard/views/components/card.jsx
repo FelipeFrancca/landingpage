@@ -5,9 +5,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
+import "./cards.css";
+
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 500,}}>
+    <Card className='card'>
       <CardActionArea>
         <CardMedia
           component="img"
