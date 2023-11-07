@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-
+import Teste from "./fTitle.png"
 import "./cards.css";
 
 export default function ActionAreaCard() {
@@ -13,10 +13,11 @@ export default function ActionAreaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          width='calc(50% - 30px)'
-          height="500"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          width='500px'
+          height="612.55px"
+          image={Teste}
           alt="green iguana"
+          backgroundColor="#000"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

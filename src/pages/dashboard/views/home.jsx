@@ -2,8 +2,12 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import "../../../assets/styles/home.css";
 
+import { Link } from "react-router-dom";
+
 import UpArrow from "@mui/icons-material/KeyboardDoubleArrowUp";
 import Card from "./components/card";
+import HomeButtom from "./components/homeButton";
+import Image from '../../../assets/images/icons/fTitle.png'
 
 export default function Home() {
   return (
@@ -54,6 +58,22 @@ export default function Home() {
           <Card/>
           <Card/>
           <Card/>
+          <HomeButtom
+          image={Image}
+          alt="green iguana"
+          component={Link}
+          to=""
+          label1="REACT.JS"
+          label2="REACT.JS2"
+          />
+          <HomeButtom
+          image={Image}
+          alt="green iguana"
+          component={Link}
+          to=""
+          label1="REACT.JS"
+          label2="REACT.JS2"
+          />
         </Box>
       </Box>
     </Box>
