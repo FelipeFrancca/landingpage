@@ -4,6 +4,17 @@
   flex-wrap: wrap;
   color: #fff;
 }
+.textHeader{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(48, 48, 48);
+  font-size: 9vw;
+  font-weight: 900;
+  filter: drop-shadow(1px 1px 10px #f7f7f7);
+  width: 100%;
+  height: auto;
+}
 .presentation {
   display: flex;
   flex-direction: column;

@@ -12,6 +12,11 @@ import Image from '../../../assets/images/icons/fTitle.png'
 export default function Home() {
   return (
     <Box className="homeConteiner">
+      <Box>
+        <Typography className="textHeader" variant="p">
+        Desenvolvedor
+        </Typography>
+      </Box>
       <Box className="presentation">
         <Typography variant="h5" letterSpacing={3} fontWeight={400}>
           Felipe França
