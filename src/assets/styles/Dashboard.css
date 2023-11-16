@@ -1,3 +1,8 @@
+*, body {
+    gap: 8px;
+    font-size: 14px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -22,6 +27,14 @@
 }
 .containerSocial img {
     width: 3.5rem;
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: min(60ch, 100%);
 }
 
 @media screen and (max-width: 800px) {

@@ -1,33 +1,37 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import "../../assets/styles/Dashboard.css";
-
-import logoTopo from "../../assets/images/icons/fTitle.png";
-import email from "../../assets/images/icons/mail.png";
-import whatsapp from "../../assets/images/icons/wpp.png";
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import MenuIcon from '@mui/icons-material/Menu';
+import Button from '@mui/material/Button';
 import { Outlet } from "react-router-dom";
 
-export default function dashboard() {
+function Dashboard() {
   return (
+    <Box> 
+    <AppBar sx={{background: 'rgba(0, 0, 0, 0)', boxShadow: 0}}>
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Felipe França
+          </Typography>
+          <Button color="inherit">Redes Sociais</Button>
+        </Toolbar>
+      </AppBar>
     <Box>
-      <Box className="container">
-        <Box className="containerSocial">
-          <a href="mailto:profissional.felipesouza@gmail.com">
-            <img src={email} alt="E-mail" />
-          </a>
-          <a href="https://api.whatsapp.com/send?phone=558487450440">
-            <img src={whatsapp} alt="Whatsapp" />
-          </a>
-        </Box>
-        <Box className="containerTop">
-          <a href="/">
-            <img src={logoTopo} alt="logoTopo" />
-          </a>
-        </Box>
-      </Box>
-      <Box className="homeContainer">
-        <Outlet />
-      </Box>
+      <Outlet/>
+    </Box>
     </Box>
   );
 }
+export default Dashboard;

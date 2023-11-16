@@ -1,5 +1,5 @@
 // HomeButton.js
-import { Box, Button } from "@mui/material";
+import { Box} from "@mui/material";
 import React from "react";
 
 function ButtonItem(props) {
@@ -8,16 +8,22 @@ function ButtonItem(props) {
   return (
     <Box
       sx={{
-        width: '500px',
-        height: "612.55px",
+        width: '200px',
+        height: "15em",
+        marginTop: '1em',
         display: "flex",
-        textAlign: "center",
+        textAlign: 'left',
+        textDecoration: 'none',
+        color: '#fff',
         fontWeight: 900,
         transition: "all 0.2s",
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-
+        left: '1',
+        '&:img':{
+          width: '50em',
+        },
         '&:hover': {
           border: "#fff solid 3px",
           transform: "scale(1.1)",
