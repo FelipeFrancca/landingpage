@@ -4,7 +4,7 @@ import "../../../assets/styles/home.css";
 
 import { Link } from "react-router-dom";
 
-import Card from "./components/card";
+import Card from "./components/card copy";
 import HomeButtom from "./components/homeButton";
 import js from "../../../assets/images/frameworks/js.png";
 import php from "../../../assets/images/frameworks/php.png";
@@ -56,7 +56,7 @@ export default function Home() {
           </Box>
             <Box className="cardsContainer">
               <Box className="cards">
-                <HomeButtom
+                {/* <HomeButtom
                   image={js}
                   alt="green iguana"
                   component={Link}
@@ -79,6 +79,14 @@ export default function Home() {
                   to=""
                   label1="MySQL"
                   label2="PostgreSQL"
+                />*/}
+                <Card
+                image={database}
+                alt="green iguana"
+                component={Link}
+                to=""
+                label1="MySQL"
+                label2="PostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQL"
                 />
               </Box>
             </Box>
