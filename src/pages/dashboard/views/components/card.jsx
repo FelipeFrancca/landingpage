@@ -1,31 +1,49 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import "./cards.css";
+import * as React from "react";
+import CardMedia from "@mui/material/CardMedia";
+import { Box, CardActionArea, IconButton, Tooltip, Zoom } from "@mui/material";
 
-export default function ActionAreaCard() {
+function ActionAreaCard(props) {
   return (
-    <Card className='card'>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="70"
-          alt="green iguana"
-          backgroundColor="#000"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <Tooltip title={props.label} TransitionComponent={Zoom}>
+      <IconButton>
+        <CardActionArea
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+            width: "auto",
+            backgroundColor: "rgb(42, 42, 42)",
+            padding: 2,
+            borderRadius: 50,
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="50"
+            image={props.image}
+            alt="green iguana"
+            sx={{ display: "flex" }}
+          />
+        </CardActionArea>
+      </IconButton>
+    </Tooltip>
   );
 }
+
+const AreaCard = (props) => {
+  return (
+    <Box>
+      {props.disabled ? (
+        <ActionAreaCard disabled {...props}>
+          {props.labe}
+        </ActionAreaCard>
+      ) : (
+        <ActionAreaCard backgroundImage={props.image} {...props}>
+          {props.label}
+        </ActionAreaCard>
+      )}
+    </Box>
+  );
+};
+
+export default AreaCard;

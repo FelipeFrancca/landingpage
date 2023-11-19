@@ -2,13 +2,15 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import "../../../assets/styles/home.css";
 
-import { Link } from "react-router-dom";
-
-import Card from "./components/card copy";
-import HomeButtom from "./components/homeButton";
+//Card area
+import Card from "./components/card";
 import js from "../../../assets/images/frameworks/js.png";
+import react from "../../../assets/images/frameworks/react.png";
+import typescript from "../../../assets/images/frameworks/typescript.png";
 import php from "../../../assets/images/frameworks/php.png";
-import database from "../../../assets/images/frameworks/database.png";
+import laravel from "../../../assets/images/frameworks/laravel.png";
+import databases from "../../../assets/images/frameworks/databases.png";
+//End
 
 export default function Home() {
   return (
@@ -51,43 +53,38 @@ export default function Home() {
               fontSize={"5vh"}
               textTransform={"uppercase"}
             >
-              Área de estudo
+              Principais áreas de estudo
             </Typography>
           </Box>
             <Box className="cardsContainer">
               <Box className="cards">
-                {/* <HomeButtom
-                  image={js}
-                  alt="green iguana"
-                  component={Link}
-                  to=""
-                  label1="JavaScript, React.JS, Typescrypt.JS"
-                  label2=""
-                />
-                <HomeButtom
-                  image={php}
-                  alt="green iguana"
-                  component={Link}
-                  to=""
-                  label1="PHP"
-                  label2="Laravel"
-                />
-                <HomeButtom
-                  image={database}
-                  alt="green iguana"
-                  component={Link}
-                  to=""
-                  label1="MySQL"
-                  label2="PostgreSQL"
-                />*/}
                 <Card
-                image={database}
-                alt="green iguana"
-                component={Link}
-                to=""
-                label1="MySQL"
-                label2="PostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQLPostgreSQL"
+                image={js}
+                alt="Framework Image"
+                label="JavaScript"
                 />
+                <Card
+                image={react}
+                alt="Framework Image"
+                label="React"
+                />
+                <Card
+                image={typescript}
+                alt="Framework Image"
+                label="Typescript"
+                />
+                <Card
+                image={php}
+                alt="Framework Image"
+                label="PHP"/>
+                <Card
+                image={laravel}
+                alt="Framework Image"
+                label="Laravel"/>
+                <Card
+                image={databases}
+                alt="Framework Image"
+                label="Databases"/>
               </Box>
             </Box>
         </Box>
