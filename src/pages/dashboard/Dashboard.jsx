@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import { Outlet } from "react-router-dom";
-import { IconButton, Link, Tooltip, Zoom } from "@mui/material";
-
+import { Link, Tooltip, Zoom } from "@mui/material";
+import '../../assets/styles/Dashboard.css'
 import Social from "./views/components/social";
 
 function Dashboard() {
@@ -17,8 +17,8 @@ function Dashboard() {
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Tooltip title="Meu Github" TransitionComponent={Zoom}>
           <Link href='https://github.com/FelipeFrancca' sx={{ textDecoration: 'none'}}>
-            <Button sx={{ color: "#fff", gap: 1 }}>
-              <GitHubIcon />
+            <Button className='myName' sx={{ color: "#fff", gap: 1 }}>
+              <GitHubIcon/>
               
               <Typography sx={{ fontSize: 15, fontWeight: 500 }}>
                 Felipe França

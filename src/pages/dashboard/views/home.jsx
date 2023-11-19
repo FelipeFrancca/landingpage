@@ -9,7 +9,15 @@ import react from "../../../assets/images/frameworks/react.png";
 import typescript from "../../../assets/images/frameworks/typescript.png";
 import php from "../../../assets/images/frameworks/php.png";
 import laravel from "../../../assets/images/frameworks/laravel.png";
+import docker from "../../../assets/images/frameworks/docker.png";
+import aws from "../../../assets/images/frameworks/aws.png";
+import gcp from "../../../assets/images/frameworks/gcp.png";
 import databases from "../../../assets/images/frameworks/databases.png";
+//End
+
+//Big card area
+import BigCard from "./components/bigCard";
+
 //End
 
 export default function Home() {
@@ -56,37 +64,38 @@ export default function Home() {
               Principais áreas de estudo
             </Typography>
           </Box>
-            <Box className="cardsContainer">
-              <Box className="cards">
-                <Card
-                image={js}
-                alt="Framework Image"
-                label="JavaScript"
-                />
-                <Card
-                image={react}
-                alt="Framework Image"
-                label="React"
-                />
-                <Card
-                image={typescript}
-                alt="Framework Image"
-                label="Typescript"
-                />
-                <Card
-                image={php}
-                alt="Framework Image"
-                label="PHP"/>
-                <Card
-                image={laravel}
-                alt="Framework Image"
-                label="Laravel"/>
-                <Card
-                image={databases}
-                alt="Framework Image"
-                label="Databases"/>
-              </Box>
-            </Box>
+          <Box className="cards" sx={{ marginTop: 1 }}>
+            <Card image={js} alt="Framework Image" label="JavaScript" />
+            <Card image={react} alt="Framework Image" label="React" />
+            <Card image={typescript} alt="Framework Image" label="Typescript" />
+            <Card image={php} alt="Framework Image" label="PHP" />
+            <Card image={laravel} alt="Framework Image" label="Laravel" />
+            <Card image={docker} alt="Framework Image" label="Docker" />
+            <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
+            <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
+            <Card image={databases} alt="Framework Image" label="Databases" />
+          </Box>
+        </Box>
+        <Box className="topic1 lineBreak">
+          <Box className="studyArea">
+            <Typography variant="p" letterSpacing={4} fontWeight={400}>
+              Destaque
+            </Typography>
+            <Typography
+              variant="p"
+              letterSpacing={4}
+              fontWeight={900}
+              fontSize={"5vh"}
+              textTransform={"uppercase"}
+            >
+              Projetos pessoais
+            </Typography>
+          </Box>
+          <Box className="cards" sx={{ marginTop: 1 }}>
+            <BigCard image={js} alt="Framework Image" label="JavaScript" />
+            <BigCard image={react} alt="Framework Image" label="React" />
+            <BigCard image={typescript} alt="Framework Image" label="Typescript" />
+          </Box>
         </Box>
       </section>
     </Box>

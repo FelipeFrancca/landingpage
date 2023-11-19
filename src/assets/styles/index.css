@@ -13,6 +13,16 @@
   color: #000;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  width: 10px;
+  background-color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +37,7 @@ body {
 }
 body::before {
   content: "";
-  background: rgba(77, 8, 136, 1);
+  background: #4d0888;
   border-radius: 50%;
   width: 10em;
   height: 10em;
@@ -39,6 +49,12 @@ body::before {
   filter: blur(50px);
   transition: opacity 0.3s;
 }
-body:hove::before {
+body:hover::before {
   opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  body::before {
+    display: none;
+  }
 }

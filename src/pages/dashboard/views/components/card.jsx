@@ -1,11 +1,10 @@
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
-import { Box, CardActionArea, IconButton, Tooltip, Zoom } from "@mui/material";
+import { Box, CardActionArea, Tooltip, Zoom } from "@mui/material";
 
 function ActionAreaCard(props) {
   return (
     <Tooltip title={props.label} TransitionComponent={Zoom}>
-      <IconButton>
         <CardActionArea
           sx={{
             display: "flex",
@@ -25,7 +24,6 @@ function ActionAreaCard(props) {
             sx={{ display: "flex" }}
           />
         </CardActionArea>
-      </IconButton>
     </Tooltip>
   );
 }
@@ -35,7 +33,7 @@ const AreaCard = (props) => {
     <Box>
       {props.disabled ? (
         <ActionAreaCard disabled {...props}>
-          {props.labe}
+          {props.label}
         </ActionAreaCard>
       ) : (
         <ActionAreaCard backgroundImage={props.image} {...props}>
