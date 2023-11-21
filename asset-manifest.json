@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landingpage/static/css/main.44fe9ecf.css",
-    "main.js": "/landingpage/static/js/main.3c7f3cef.js",
+    "main.js": "/landingpage/static/js/main.b9f36fcd.js",
     "static/js/787.b64f6faf.chunk.js": "/landingpage/static/js/787.b64f6faf.chunk.js",
     "static/media/aws.png": "/landingpage/static/media/aws.5d30b94c2f31a6816628.png",
     "static/media/laravel.png": "/landingpage/static/media/laravel.6bc47217e2b7894b2339.png",
@@ -70,11 +70,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/landingpage/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/landingpage/index.html",
     "main.44fe9ecf.css.map": "/landingpage/static/css/main.44fe9ecf.css.map",
-    "main.3c7f3cef.js.map": "/landingpage/static/js/main.3c7f3cef.js.map",
+    "main.b9f36fcd.js.map": "/landingpage/static/js/main.b9f36fcd.js.map",
     "787.b64f6faf.chunk.js.map": "/landingpage/static/js/787.b64f6faf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44fe9ecf.css",
-    "static/js/main.3c7f3cef.js"
+    "static/js/main.b9f36fcd.js"
   ]
 }
