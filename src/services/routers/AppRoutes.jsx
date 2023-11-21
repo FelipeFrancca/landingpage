@@ -6,7 +6,7 @@ import Dashboard from "../../pages/dashboard/Dashboard";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="" element={<Dashboard />}>
+      <Route path="/landingpage" element={<Dashboard />}>
         <Route path="" element={<Home />} />
       </Route>
       <Route path="*" element={<NotFound />} />
