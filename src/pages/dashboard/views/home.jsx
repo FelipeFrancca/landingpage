@@ -92,9 +92,9 @@ export default function Home() {
             </Typography>
           </Box>
           <Box className="cards" sx={{ marginTop: 1 }}>
-            <BigCard image={js} alt="Framework Image" label="JavaScript" />
-            <BigCard image={react} alt="Framework Image" label="React" />
-            <BigCard image={typescript} alt="Framework Image" label="Typescript" />
+            <BigCard image={js} alt="Fake Trello" label="Fake Trello" label2="Projeto criado com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello." />
+            <BigCard image={react} alt="Pagina de login" label="Pagina de login" label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário." />
+            <BigCard image={typescript} alt="Meu casamento" label="Meu casamento" label2="Site criado para guardar detalhes sobre meu casamento até o dia da serimonia." />
           </Box>
         </Box>
       </section>

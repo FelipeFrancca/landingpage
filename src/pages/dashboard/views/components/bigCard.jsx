@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, CardActionArea, CardMedia, Tooltip, Zoom, Typography } from '@mui/material';
+import "./bigCard.css";
 
 const SeuComponente = (props) => {
   return (
@@ -14,6 +15,7 @@ const SeuComponente = (props) => {
             backgroundColor: 'rgb(42, 42, 42)',
             padding: 2,
             position: 'relative',
+            overflow: 'hidden',
             '&::before': {
               content: "''",
               position: 'absolute',
@@ -26,7 +28,7 @@ const SeuComponente = (props) => {
               zIndex: 1,
             },
             '&:hover::before': {
-              backgroundColor: 'rgba(255, 255, 255, 0.7)',
+              backgroundColor: 'rgba(0, 0, 0, 0.789)',
             },
           }}
         >
@@ -37,23 +39,27 @@ const SeuComponente = (props) => {
             alt="green iguana"
             sx={{ display: 'flex' }}
           />
-          <Typography
-            variant="body1"
+          <Typography className='animation'
+            variant="p"
             sx={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              color: 'black',
-              visibility: 'hidden',
-              zIndex: 2,
               '&:hover': {
-                visibility: 'visible',
-                border: 'solid red'
+                opacity: 1,
               },
+              color: '#fff',
+              position: 'absolute',
+              width: '90%',
+              height: '100%',
+              top: 0,
+              left: 0,
+              textAlign: 'left',
+              padding: 2,
+              opacity: 0,
+              zIndex: 1,
+              transition: 'opacity .2s linear',
             }}
           >
-            Seu Texto Aqui
+            {props.label} <br /> <br />
+            {props.label2}
           </Typography>
         </CardActionArea>
       </Tooltip>
