@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import "../../../assets/styles/home.css";
 
 //Card area
@@ -96,6 +96,7 @@ export default function Home() {
             <BigCard image={react} alt="Pagina de login" label="Pagina de login" label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário." />
             <BigCard image={typescript} alt="Meu casamento" label="Meu casamento" label2="Site criado para guardar detalhes sobre meu casamento até o dia da cerimônia." />
           </Box>
+          <a href="https://google.com" className="linkTopic">teste</a>
         </Box>
       </section>
     </Box>
