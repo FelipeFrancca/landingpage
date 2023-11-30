@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
 
 //Card area
@@ -17,6 +18,8 @@ import databases from "../../../assets/images/frameworks/databases.png";
 
 //Big card area
 import BigCard from "./components/bigCard";
+import DragAndDrop from "../../../assets/images/icons/drag&drop.png";
+import Loginpg from "../../../assets/images/icons/loginpg.png";
 
 //End
 
@@ -71,8 +74,16 @@ export default function Home() {
             <Card image={php} alt="Framework Image" label="PHP" />
             <Card image={laravel} alt="Framework Image" label="Laravel" />
             <Card image={docker} alt="Framework Image" label="Docker" />
-            <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
-            <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
+            <Card
+              image={aws}
+              alt="Framework Image"
+              label="Amazon Web Services"
+            />
+            <Card
+              image={gcp}
+              alt="Framework Image"
+              label="Google Cloud Platform"
+            />
             <Card image={databases} alt="Framework Image" label="Databases" />
           </Box>
         </Box>
@@ -92,11 +103,26 @@ export default function Home() {
             </Typography>
           </Box>
           <Box className="cards" sx={{ marginTop: 1 }}>
-            <BigCard image={js} alt="Fake Trello" label="Fake Trello" label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello." />
-            <BigCard image={react} alt="Pagina de login" label="Pagina de login" label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário." />
-            <BigCard image={typescript} alt="Meu casamento" label="Meu casamento" label2="Site criado para guardar detalhes sobre meu casamento até o dia da cerimônia." />
+            <BigCard
+              image={DragAndDrop}
+              alt="Fake Trello"
+              label="Fake Trello"
+              label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+              component={Link}
+              to="/landingpage"
+            />
+            <BigCard
+              image={Loginpg}
+              alt="Pagina de login"
+              label="Pagina de login"
+              label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
+              component={Link}
+              to="/landingpage"
+            />
           </Box>
-          <a href="https://google.com" className="linkTopic">teste</a>
+          <a href="https://google.com" className="linkTopic">
+            teste
+          </a>
         </Box>
       </section>
     </Box>

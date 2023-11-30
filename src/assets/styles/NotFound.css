@@ -1,17 +1,5 @@
-.error404 {
-    color: #ff3500;
-}
-
 .textNotfound {
-    color: #000022;
+    color: #fff;
     text-decoration: none;
-}
-
-.textNFB {
-    color: #ff3500;
-    text-decoration: none;
-}
-
-.textNFB:hover {
-    color: #000022;
+    font-size: 20px;
 }

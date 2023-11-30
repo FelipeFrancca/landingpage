@@ -39,7 +39,7 @@ const SeuComponente = (props) => {
             alt="green iguana"
             sx={{ display: 'flex' }}
           />
-          <Typography className='animation'
+          <Typography
             variant="p"
             sx={{
               '&:hover': {
