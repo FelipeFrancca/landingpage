@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/landingpage/static/css/main.44fe9ecf.css",
-    "main.js": "/landingpage/static/js/main.e2a923ac.js",
+    "main.css": "/landingpage/static/css/main.63d6b6de.css",
+    "main.js": "/landingpage/static/js/main.377a1e57.js",
     "static/js/787.b64f6faf.chunk.js": "/landingpage/static/js/787.b64f6faf.chunk.js",
+    "static/media/profileImage.jpg": "/landingpage/static/media/profileImage.ea7681b22355dc361534.jpg",
+    "static/media/postgre.png": "/landingpage/static/media/postgre.f18a0366b5b3ff8c3e9a.png",
+    "static/media/mysql.png": "/landingpage/static/media/mysql.060ead14307ad82a6728.png",
     "static/media/aws.png": "/landingpage/static/media/aws.5d30b94c2f31a6816628.png",
     "static/media/laravel.png": "/landingpage/static/media/laravel.6bc47217e2b7894b2339.png",
     "static/media/php.png": "/landingpage/static/media/php.4990580e9b615aeebb1f.png",
     "static/media/gcp.png": "/landingpage/static/media/gcp.af392586c496e7cd681d.png",
     "static/media/react.png": "/landingpage/static/media/react.3bf6fb4b18b1f904676d.png",
-    "static/media/databases.png": "/landingpage/static/media/databases.4167bc104442b7c930af.png",
+    "static/media/wpp.png": "/landingpage/static/media/wpp.609cdc96e60197d25e4c.png",
+    "static/media/github.png": "/landingpage/static/media/github.711e6699d36210acb6f1.png",
+    "static/media/loginpg.png": "/landingpage/static/media/loginpg.506b6db0cadbbee5b65d.png",
+    "static/media/mail.png": "/landingpage/static/media/mail.e2f3d19506c44aae1e25.png",
+    "static/media/linkedin.png": "/landingpage/static/media/linkedin.8d53e06fec1ad9f4e153.png",
+    "static/media/drag&drop.png": "/landingpage/static/media/drag&drop.c7c07b7b4bf57779cba7.png",
     "static/media/docker.png": "/landingpage/static/media/docker.c1f953a3ead577c05d04.png",
     "static/media/roboto-latin-500-normal.woff2": "/landingpage/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/landingpage/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -69,12 +77,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/landingpage/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/landingpage/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/landingpage/index.html",
-    "main.44fe9ecf.css.map": "/landingpage/static/css/main.44fe9ecf.css.map",
-    "main.e2a923ac.js.map": "/landingpage/static/js/main.e2a923ac.js.map",
+    "main.63d6b6de.css.map": "/landingpage/static/css/main.63d6b6de.css.map",
+    "main.377a1e57.js.map": "/landingpage/static/js/main.377a1e57.js.map",
     "787.b64f6faf.chunk.js.map": "/landingpage/static/js/787.b64f6faf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44fe9ecf.css",
-    "static/js/main.e2a923ac.js"
+    "static/css/main.63d6b6de.css",
+    "static/js/main.377a1e57.js"
   ]
 }
