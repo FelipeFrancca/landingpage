@@ -14,6 +14,8 @@ section {
 
 #paper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 1rem;
   padding-left: 2rem;
@@ -21,6 +23,8 @@ section {
   margin-top: 3%;
   color: #fff;
   background-color: #3c3c3c;
+  width: 60vw;
+  min-height: 20vh;
 }
 
 .imageProfile {
@@ -67,4 +71,44 @@ section {
   color: #fff;
   font-size: 50px;
   font-weight: 900;
+}
+
+.quickAcessGit {
+  -webkit-animation: pulsate-bck 4s ease-in-out infinite both;
+	        animation: pulsate-bck 4s ease-in-out infinite both;
+          transition: 1s ;
+          padding: 1em;
+}
+
+.quickAcessGit:hover {
+  opacity: 60%;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }

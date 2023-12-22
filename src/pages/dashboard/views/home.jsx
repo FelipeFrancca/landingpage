@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
 import imageProfile from "../../../assets/images/profileImage.jpg";
 
+import wpp from "../../../assets/images/icons/wpp.png";
+import email from "../../../assets/images/icons/mail.png";
+import linkedin from "../../../assets/images/icons/linkedin.png";
+import github from "../../../assets/images/icons/github.png";
+
 //Card area
 import Card from "./components/card";
+import CardTop from "./components/cardTop";
 import js from "../../../assets/images/frameworks/js.png";
 import react from "../../../assets/images/frameworks/react.png";
 import typescript from "../../../assets/images/frameworks/typescript.png";
@@ -14,7 +20,8 @@ import laravel from "../../../assets/images/frameworks/laravel.png";
 import docker from "../../../assets/images/frameworks/docker.png";
 import aws from "../../../assets/images/frameworks/aws.png";
 import gcp from "../../../assets/images/frameworks/gcp.png";
-import databases from "../../../assets/images/frameworks/databases.png";
+import mysql from "../../../assets/images/frameworks/mysql.png";
+import postgre from "../../../assets/images/frameworks/postgre.png";
 //End
 
 //Big card area
@@ -29,15 +36,49 @@ export default function Home() {
     <Box className="homeConteiner">
       <section>
         <Box className="presentation">
-          <Avatar
-            className="imageProfile"
-            alt="Felipe França"
-            src={imageProfile}
-            sx={{ width: "15em", height: "auto" }}
-          />
-          <Typography variant="p" letterSpacing={4} fontWeight={400}>
-            Felipe França
-          </Typography>
+          <Paper id="paper">
+            <Avatar
+              className="imageProfile"
+              alt="Felipe França"
+              src={imageProfile}
+              sx={{ width: "15em", height: "auto" }}
+            />
+            <Typography variant="h6" letterSpacing={4} fontWeight={400}>
+              Felipe França
+            </Typography>
+            <Box className="topic1 lineBreak">
+              <Box className="cards" sx={{ marginTop: 1 }}>
+                <CardTop
+                  image={wpp}
+                  alt="Framework Image"
+                  label="WhatsApp"
+                  component={Link}
+                  to="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
+                />
+                <CardTop
+                  image={email}
+                  alt="Contato number"
+                  label="E-mail"
+                  component={Link}
+                  to="mailto:profissional.felipesouza@gmail.com"
+                />
+                <CardTop
+                  image={linkedin}
+                  alt="Contato mail"
+                  label="LinkedIn"
+                  component={Link}
+                  to="/landingpage"
+                />
+                <CardTop
+                  image={github}
+                  alt="Contato mail"
+                  label="GitHub"
+                  component={Link}
+                  to="/landingpage"
+                />
+              </Box>
+            </Box>
+          </Paper>
           <Paper id="paper">
             <Typography
               variant="p"
@@ -97,7 +138,8 @@ export default function Home() {
                 alt="Framework Image"
                 label="Google Cloud Platform"
               />
-              <Card image={databases} alt="Framework Image" label="Databases" />
+              <Card image={mysql} alt="Framework Image" label="MySQL" />
+              <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
             </Box>
           </Box>
         </Paper>
@@ -135,9 +177,16 @@ export default function Home() {
                 to="/landingpage"
               />
             </Box>
-            <a href="https://google.com" className="linkTopic">
-              teste
-            </a>
+            <Box className="quickAcessGit">
+              <a
+                href="https://github.com/FelipeFrancca?tab=repositories"
+                className="linkTopic"
+              >
+                <Typography variant="h6">
+                  Acesse aos meus repositórios
+                </Typography>
+              </a>
+            </Box>
           </Box>
         </Paper>
       </section>
