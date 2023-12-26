@@ -11,11 +11,12 @@ const SeuComponente = (props) => {
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
-            width: 'auto',
+            width: '11em',
             backgroundColor: 'rgb(42, 42, 42)',
             padding: 2,
             position: 'relative',
             overflow: 'hidden',
+            marginBottom: 2,
             '&::before': {
               content: "''",
               position: 'absolute',
@@ -30,11 +31,14 @@ const SeuComponente = (props) => {
             '&:hover::before': {
               backgroundColor: 'rgba(0, 0, 0, 0.789)',
             },
+            "@media (max-width: 767px)": {
+              width: "7em",
+            }
           }}
         >
           <CardMedia
             component="img"
-            height="200"
+            height="auto"
             image={props.image}
             alt="green iguana"
             sx={{ display: 'flex' }}

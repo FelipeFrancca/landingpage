@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Box, Paper, Typography } from "@mui/material";
+import { Avatar, Box, CardActionArea, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
 import imageProfile from "../../../assets/images/profileImage.jpg";
@@ -46,37 +46,35 @@ export default function Home() {
             <Typography variant="h6" letterSpacing={4} fontWeight={400}>
               Felipe França
             </Typography>
-            <Box className="topic1 lineBreak">
-              <Box className="cards" sx={{ marginTop: 1 }}>
-                <CardTop
-                  image={wpp}
-                  alt="Framework Image"
-                  label="WhatsApp"
-                  component={Link}
-                  to="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
-                />
-                <CardTop
-                  image={email}
-                  alt="Contato number"
-                  label="E-mail"
-                  component={Link}
-                  to="mailto:profissional.felipesouza@gmail.com"
-                />
-                <CardTop
-                  image={linkedin}
-                  alt="Contato mail"
-                  label="LinkedIn"
-                  component={Link}
-                  to="/landingpage"
-                />
-                <CardTop
-                  image={github}
-                  alt="Contato mail"
-                  label="GitHub"
-                  component={Link}
-                  to="/landingpage"
-                />
-              </Box>
+            <Box className="cardsContact">
+              <CardTop
+                image={wpp}
+                alt="Framework Image"
+                label="WhatsApp"
+                component={Link}
+                to="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
+              />
+              <CardTop
+                image={email}
+                alt="Mail"
+                label="E-mail"
+                component={Link}
+                to="mailto:profissional.felipesouza@gmail.com"
+              />
+              <CardTop
+                image={linkedin}
+                alt="LinkedIn"
+                label="LinkedIn"
+                component={Link}
+                to="https://www.linkedin.com/in/felipe-frança-22542a254/"
+              />
+              <CardTop
+                image={github}
+                alt="Contato mail"
+                label="GitHub"
+                component={Link}
+                to="https://github.com/FelipeFrancca"
+              />
             </Box>
           </Paper>
           <Paper id="paper">
@@ -85,12 +83,12 @@ export default function Home() {
               letterSpacing={4}
               lineHeight={1}
               fontWeight={900}
-              fontSize={"3vh"}
+              fontSize={"4vh"}
               textTransform={"uppercase"}
             >
-              Dev. especializado em interface e experiência do usuário
+              Desenvolvedor especializado em interface e experiência do usuário
             </Typography>
-            <Box className="textLimiterWidth" sx={{ marginTop: 2 }}>
+            <Box sx={{ marginTop: 2 }}>
               <Typography variant="p" letterSpacing={2} fontWeight={400}>
                 Construção de aplicações web com as frameworks React e
                 TypeScript que permitem criar interfaces bonitas e responsivas
@@ -102,8 +100,8 @@ export default function Home() {
           </Paper>
         </Box>
         <Paper id="paper">
-          <Box className="topic1 lineBreak">
-            <Box className="studyArea">
+          <Box className="topic1">
+            <Box className="studyArea textLimiterWidth">
               <Typography variant="p" letterSpacing={4} fontWeight={400}>
                 Linguagens de programação
               </Typography>
@@ -111,13 +109,13 @@ export default function Home() {
                 variant="p"
                 letterSpacing={4}
                 fontWeight={900}
-                fontSize={"5vh"}
+                fontSize={"3.5vh"}
                 textTransform={"uppercase"}
               >
                 Principais áreas de estudo
               </Typography>
             </Box>
-            <Box className="cards" sx={{ marginTop: 1 }}>
+            <Box className="cards">
               <Card image={js} alt="Framework Image" label="JavaScript" />
               <Card image={react} alt="Framework Image" label="React" />
               <Card
@@ -145,7 +143,7 @@ export default function Home() {
         </Paper>
         <Paper id="paper">
           <Box className="topic1 lineBreak">
-            <Box className="studyArea">
+            <Box className="studyArea textLimiterWidth">
               <Typography variant="p" letterSpacing={4} fontWeight={400}>
                 Destaque
               </Typography>
@@ -153,13 +151,45 @@ export default function Home() {
                 variant="p"
                 letterSpacing={4}
                 fontWeight={900}
-                fontSize={"5vh"}
+                fontSize={"3.5vh"}
                 textTransform={"uppercase"}
               >
                 Projetos pessoais
               </Typography>
             </Box>
-            <Box className="cards" sx={{ marginTop: 1 }}>
+            <Box className="cards bigCards">
+              <BigCard
+                image={DragAndDrop}
+                alt="Fake Trello"
+                label="Fake Trello"
+                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+                component={Link}
+                to="/landingpage"
+              />
+              <BigCard
+                image={Loginpg}
+                alt="Pagina de login"
+                label="Pagina de login"
+                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
+                component={Link}
+                to="/landingpage"
+              />
+              <BigCard
+                image={DragAndDrop}
+                alt="Fake Trello"
+                label="Fake Trello"
+                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+                component={Link}
+                to="/landingpage"
+              />
+              <BigCard
+                image={Loginpg}
+                alt="Pagina de login"
+                label="Pagina de login"
+                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
+                component={Link}
+                to="/landingpage"
+              />
               <BigCard
                 image={DragAndDrop}
                 alt="Fake Trello"
@@ -177,15 +207,17 @@ export default function Home() {
                 to="/landingpage"
               />
             </Box>
-            <Box className="quickAcessGit">
-              <a
-                href="https://github.com/FelipeFrancca?tab=repositories"
-                className="linkTopic"
-              >
-                <Typography variant="h6">
-                  Acesse aos meus repositórios
-                </Typography>
-              </a>
+            <Box>
+              <CardActionArea className="quickAcessGit">
+                <a
+                  href="https://github.com/FelipeFrancca?tab=repositories"
+                  className="linkTopic"
+                >
+                  <Typography variant="h6">
+                    Acesse aos meus repositórios
+                  </Typography>
+                </a>
+              </CardActionArea>
             </Box>
           </Box>
         </Paper>

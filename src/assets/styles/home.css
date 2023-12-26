@@ -20,11 +20,14 @@ section {
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 3%;
   color: #fff;
   background-color: #3c3c3c;
   width: 60vw;
   min-height: 20vh;
+}
+
+.textLimiterWidth {
+  width: 40%
 }
 
 .imageProfile {
@@ -55,15 +58,31 @@ section {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  height: auto;
+}
+
+.cardsContact {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
 }
 
 .cards {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: start;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 10px;
+  overflow-x: auto;
+  width: 50%;
+}
+
+.cards::-webkit-scrollbar {
+  height: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #fff;
 }
 
 .linkTopic {
@@ -72,43 +91,14 @@ section {
   font-size: 50px;
   font-weight: 900;
 }
-
-.quickAcessGit {
-  -webkit-animation: pulsate-bck 4s ease-in-out infinite both;
-	        animation: pulsate-bck 4s ease-in-out infinite both;
-          transition: 1s ;
-          padding: 1em;
-}
-
 .quickAcessGit:hover {
   opacity: 60%;
 }
 
-@-webkit-keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+@media (max-width: 767px) {
+  #paper {
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }

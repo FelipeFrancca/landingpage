@@ -10,19 +10,23 @@ function ActionAreaCard(props) {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          width: "auto",
+          width: "6em",
           backgroundColor: "rgb(42, 42, 42)",
           padding: 2,
           paddingTop: 5,
           borderRadius: 50,
+          marginBottom: 2,
           "&:hover":{
           background: `linear-gradient(180deg, rgb(42, 42, 42) 80%, rgba(131, 9, 198, 1) 100%)`,
+          },
+          "@media (max-width: 767px)": {
+            width: "3.9em",
           }
         }}
       >
         <CardMedia
           component="img"
-          height="50"
+          height="auto"
           image={props.image}
           alt="Card"
           sx={{ display: "flex" }}

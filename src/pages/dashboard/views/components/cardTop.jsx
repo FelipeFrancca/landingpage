@@ -20,26 +20,30 @@ function ActionAreaCard(props) {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          width: "auto",
+          width: "7rem",
           backgroundColor: "rgb(42, 42, 42)",
           padding: 2,
           paddingTop: 5,
           marginTop: 3,
           borderRadius: 50,
+          flexDirection: "column",
           "&:hover":{
             background: `linear-gradient(180deg, rgb(42, 42, 42) 80%, rgba(131, 9, 198, 1) 100%)`,
+            },
+            "@media (max-width: 767px)": {
+              width: "5em",
             }
         }}
       >
+        <Typography sx={{fontSize: "90%"}}>{props.label}</Typography>
         <CardMedia
           component="img"
-          height="70"
+          height="auto"
           image={props.image}
           alt="Card"
           sx={{ display: "flex" }}
         />
       </CardActionArea>
-      <Typography fontWeight={900} sx={{padding: 1}}>{props.label}</Typography>
     </Tooltip>
   );
 }
