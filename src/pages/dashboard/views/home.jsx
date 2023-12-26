@@ -157,39 +157,7 @@ export default function Home() {
                 Projetos pessoais
               </Typography>
             </Box>
-            <Box className="cards bigCards">
-              <BigCard
-                image={DragAndDrop}
-                alt="Fake Trello"
-                label="Fake Trello"
-                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
-                component={Link}
-                to="/landingpage"
-              />
-              <BigCard
-                image={Loginpg}
-                alt="Pagina de login"
-                label="Pagina de login"
-                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
-                component={Link}
-                to="/landingpage"
-              />
-              <BigCard
-                image={DragAndDrop}
-                alt="Fake Trello"
-                label="Fake Trello"
-                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
-                component={Link}
-                to="/landingpage"
-              />
-              <BigCard
-                image={Loginpg}
-                alt="Pagina de login"
-                label="Pagina de login"
-                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
-                component={Link}
-                to="/landingpage"
-              />
+            <Box className="cards">
               <BigCard
                 image={DragAndDrop}
                 alt="Fake Trello"
