@@ -1,143 +1,145 @@
 import React from "react";
-import { Box, Paper } from "@mui/material";
+import { Avatar, Box, CardActionArea, Paper, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
+import imageProfile from "../../../assets/images/profileImage.jpg";
 
-import BannerHeader from "../../../assets/images/bannerHeader.jpg";
+import wpp from "../../../assets/images/icons/wpp.png";
+import email from "../../../assets/images/icons/mail.png";
+import linkedin from "../../../assets/images/icons/linkedin.png";
+import github from "../../../assets/images/icons/github.png";
+
+//Card area
+import Card from "./components/card";
+import CardTop from "./components/cardTop";
+import js from "../../../assets/images/frameworks/js.png";
+import react from "../../../assets/images/frameworks/react.png";
+import typescript from "../../../assets/images/frameworks/typescript.png";
+import php from "../../../assets/images/frameworks/php.png";
+import laravel from "../../../assets/images/frameworks/laravel.png";
+import docker from "../../../assets/images/frameworks/docker.png";
+import aws from "../../../assets/images/frameworks/aws.png";
+import gcp from "../../../assets/images/frameworks/gcp.png";
+import mysql from "../../../assets/images/frameworks/mysql.png";
+import postgre from "../../../assets/images/frameworks/postgre.png";
+//End
+
+//Big card area
+import BigCard from "./components/bigCard";
+import DragAndDrop from "../../../assets/images/icons/drag&drop.png";
+import Loginpg from "../../../assets/images/icons/loginpg.png";
+
+//End
 
 export default function Home() {
   return (
-    <Box className="container">
-      <Box className="bannerHeader">
-        <img src={BannerHeader} alt="Banner Não encontrado" />
-        <Box className="midTextBg">
-          <p id="midText1">Padaria Virtual</p>
-          <p id="midText2">A receita perfeita para adoçar seus dias!</p>
+    <Box className="homeConteiner">
+        <Box className="presentation">
+          <Paper id="paper">
+            <Avatar
+              className="imageProfile"
+              alt="Felipe França"
+              src={imageProfile}
+              sx={{ width: "15em", height: "auto" }}
+            />
+            <Typography variant="h6" letterSpacing={4} fontWeight={400}>
+              Felipe França
+            </Typography>
+            <Box className="cardsContact">
+              <CardTop
+                image={wpp}
+                alt="Framework Image"
+                label="WhatsApp"
+                component={Link}
+                to="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
+              />
+              <CardTop
+                image={email}
+                alt="Mail"
+                label="E-mail"
+                component={Link}
+                to="mailto:profissional.felipesouza@gmail.com"
+              />
+              <CardTop
+                image={linkedin}
+                alt="LinkedIn"
+                label="LinkedIn"
+                component={Link}
+                to="https://www.linkedin.com/in/felipe-frança-22542a254/"
+              />
+              <CardTop
+                image={github}
+                alt="Contato mail"
+                label="GitHub"
+                component={Link}
+                to="https://github.com/FelipeFrancca"
+              />
+            </Box>
+          </Paper>
+          <Paper id="paper">
+            <Typography
+              variant="p"
+              letterSpacing={4}
+              lineHeight={1}
+              fontWeight={900}
+              fontSize={"4vh"}
+              textTransform={"uppercase"}
+            >
+              Desenvolvedor especializado em interface e experiência do usuário
+            </Typography>
+            <Box sx={{ marginTop: 2 }}>
+              <Typography variant="p" letterSpacing={2} fontWeight={400}>
+                Construção de aplicações web com as frameworks React e
+                TypeScript que permitem criar interfaces bonitas e responsivas
+                para qualquer dispositivo. Proeficiência em PHP e laravel, que
+                possibilita desenvolver sistemas robustos e escaláveis,
+                atendendo às necessidades complexas e garantindo a segurança.
+              </Typography>
+            </Box>
+          </Paper>
         </Box>
-      </Box>
-      <Box className="home1">
         <Paper id="paper">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            autem tempora, amet repudiandae maxime voluptates id rerum totam
-            tempore minima officia, corporis explicabo incidunt vitae voluptas
-            quasi at cum iure et. Amet, laudantium. Saepe, explicabo! Quo
-            cupiditate laborum nostrum atque nam minima culpa recusandae aut
-            quia possimus, impedit quod qui quis molestias, eum assumenda
-            praesentium quibusdam nesciunt doloremque dolore alias deleniti!
-            Dolorum quaerat quia vel neque modi nemo obcaecati doloremque autem
-            eaque, iste dolor accusamus odit totam unde architecto. Totam
-            aliquam laboriosam doloremque commodi minus sint, in tenetur natus
-            atque rem iure architecto perferendis fuga odio dolorum nemo facere
-            accusantium. Obcaecati quisquam consequuntur sapiente quia possimus
-            at tempora expedita dicta aspernatur, odio quae nihil, error itaque
-            quasi quod veritatis recusandae cupiditate provident quidem magni
-            iure! Iusto officiis non, culpa, eveniet at atque veritatis alias
-            corporis qui modi odio facilis pariatur consequuntur distinctio
-            commodi ipsam quisquam fuga dolores unde. At, ipsam. Esse fuga
-            libero exercitationem ipsa. Dicta ut vero eligendi dolores odit
-            quas, quo nobis dolorum perferendis culpa, fuga harum voluptates,
-            asperiores quibusdam quaerat vel! Accusantium tenetur fugiat ipsa
-            voluptatem, enim porro, quisquam, ratione dolorum fugit sunt
-            voluptatibus vero architecto quam repellat. Quas ut eveniet hic
-            maiores? Vitae eius explicabo doloribus nemo soluta! Inventore, quo.
-            Ipsam quisquam perspiciatis ex hic adipisci exercitationem soluta
-            corporis quasi officia? Ducimus nisi consequatur culpa nesciunt
-            laboriosam officiis quo id ex molestias obcaecati nemo dolor fuga
-            quis incidunt neque dolorum assumenda illo est esse, quos cum
-            consequuntur voluptatum. Quo iste obcaecati sed, at dicta nostrum
-            minus vel commodi omnis reprehenderit recusandae voluptas quas
-            doloribus facilis dignissimos enim. Voluptas totam non ipsa
-            repellendus laudantium voluptatem reiciendis quisquam sit
-            voluptatibus. Harum facere, vel distinctio autem ullam quo. Corrupti
-            rem libero alias porro, pariatur veritatis ipsum aperiam impedit
-            blanditiis magni qui iure officia eligendi consequuntur molestias et
-            autem quo, temporibus reprehenderit consequatur amet quibusdam? Sit
-            dignissimos magni architecto! Laudantium corporis illo nemo suscipit
-            adipisci, maxime tempora dolor harum aut facilis consequuntur modi,
-            eligendi excepturi, sapiente sint voluptate! Quidem, deserunt
-            laboriosam. Reiciendis voluptatem quaerat fuga aut ipsam veritatis
-            distinctio provident quia mollitia cumque nesciunt doloremque velit
-            veniam quod amet et perferendis impedit, corporis autem. Deleniti
-            sapiente tempora, modi nesciunt quasi quidem tempore debitis,
-            inventore officiis neque excepturi deserunt id temporibus, eveniet
-            reiciendis quas dolor cupiditate architecto recusandae! Quisquam
-            expedita, velit molestiae eum debitis aperiam obcaecati quis
-            accusantium ratione suscipit, maiores officiis temporibus,
-            consequuntur quod culpa nam iste minima saepe! A cupiditate
-            praesentium exercitationem ipsam quidem culpa eaque ex ratione,
-            nobis provident tempore esse nulla saepe dolorem expedita,
-            consequatur obcaecati reiciendis necessitatibus? Deleniti fugiat
-            error adipisci ducimus fuga unde nam doloremque nulla harum est
-            corrupti in, nesciunt vero commodi illum magnam cum sit voluptas
-            dolorem molestias sequi iure tenetur similique possimus. Corrupti,
-            atque sed alias vero vitae eos ut perspiciatis hic repudiandae
-            praesentium non nisi reiciendis saepe! Nulla fugiat vel quam vero.
-            Nihil modi asperiores, nam delectus porro atque itaque ut
-            necessitatibus ratione blanditiis. Veritatis accusamus hic
-            repudiandae voluptatibus ipsum ipsam, soluta odio iste, nobis
-            repellendus nesciunt officiis maiores facere sapiente. Alias facilis
-            possimus quae reiciendis culpa reprehenderit esse unde, laboriosam
-            similique vel neque minus incidunt officia tenetur nisi. Blanditiis,
-            itaque eveniet iusto minima illum placeat eius accusantium suscipit
-            natus repellat cupiditate ipsam asperiores voluptatum, pariatur hic
-            praesentium corrupti doloribus delectus optio adipisci soluta vel?
-            Quis expedita accusantium ullam dolores magnam incidunt repellat,
-            dicta rem consectetur cum dolor quasi aliquam consequuntur iure
-            exercitationem rerum similique molestiae sunt perferendis placeat
-            necessitatibus eum aperiam ab. Officia, libero explicabo assumenda,
-            temporibus ea animi vitae nam sequi necessitatibus voluptatum
-            facilis modi? Perspiciatis libero, qui, optio, possimus ducimus in
-            tenetur consectetur eos repudiandae ab numquam sapiente neque
-            eligendi voluptates? Ab velit pariatur totam, neque illum fugiat
-            magnam fugit minus molestiae non perferendis accusantium placeat,
-            impedit nihil tenetur et sed! Quas ipsum aspernatur illo ab aut nam
-            sequi aliquid ea qui. Recusandae, reprehenderit cupiditate! Illo,
-            consequuntur quaerat quas, harum magnam ex delectus itaque dolore
-            accusantium quam repellendus aliquid numquam vero debitis soluta
-            ipsa, nobis perferendis eius quisquam fugiat fuga facilis. Illum
-            rerum, suscipit, similique neque in quos veniam quasi architecto
-            laudantium ipsum impedit aspernatur possimus tempore est veritatis
-            modi. Porro ipsum molestiae sed, quis accusantium velit repellendus
-            mollitia, unde, architecto distinctio enim. Maxime corporis omnis
-            accusantium. Aliquam recusandae quod ab quibusdam dicta rem numquam?
-            Animi quisquam quam praesentium quis mollitia ipsum saepe natus
-            reprehenderit ab possimus illo neque placeat molestiae alias,
-            asperiores ullam. Cumque aspernatur, culpa exercitationem fuga,
-            aliquid dicta consequatur esse praesentium non illo maiores ipsum
-            soluta velit repellendus voluptates dolores quisquam illum nesciunt,
-            inventore aliquam? Praesentium fuga sapiente cumque rem alias
-            maxime. Incidunt sint possimus nemo placeat eum labore earum,
-            commodi quisquam totam libero et qui numquam. Laudantium, debitis
-            inventore. Inventore debitis quibusdam ipsa quidem sequi, maxime
-            mollitia iste, saepe ipsum velit autem commodi non enim laboriosam
-            et expedita repudiandae excepturi totam rerum eligendi nam quae eius
-            unde impedit. Enim asperiores temporibus perspiciatis voluptate
-            cupiditate dolores dolor amet iure doloremque ipsum, atque molestiae
-            eveniet necessitatibus nesciunt, accusantium tenetur fugit ducimus
-            aut. Quod, fuga sapiente distinctio dolorem repudiandae eaque natus
-            ratione odio, velit nam eius nobis ab vel assumenda cupiditate
-            nostrum, quam quae? Asperiores tempora libero iure laudantium
-            deleniti cumque ratione nesciunt aliquam. Cupiditate dignissimos
-            dolorum velit sequi modi officia cum molestias ratione, pariatur
-            unde ullam temporibus hic, perferendis expedita quas! Maxime rerum
-            accusamus nisi ad nobis, consequatur dolor dolorem fuga, nihil natus
-            at rem odio, voluptatum veritatis cum? Recusandae aspernatur ad
-            repudiandae temporibus atque perspiciatis nesciunt labore asperiores
-            quos numquam voluptatem laboriosam neque ipsa laudantium aut, sint
-            hic reprehenderit dolores cupiditate aperiam ipsum maiores magnam
-            earum. Minus, animi veniam esse dolores aspernatur quam aliquid
-            necessitatibus repudiandae ab iure corporis ducimus ipsam? Deserunt
-            dolorem recusandae libero nulla fugiat nisi odio accusantium sit
-            odit, saepe accusamus officia qui, ut veritatis omnis architecto
-            voluptates est assumenda nam aliquam perferendis. Officia repellat
-            possimus sint, quis numquam placeat consequatur doloribus neque,
-            laudantium facere provident praesentium culpa, quia inventore cum
-            amet delectus nostrum id aliquid unde. Expedita provident
-            consequatur animi dolor non distinctio accusamus unde deleniti,
-            totam, alias odit quas illum!
-          </p>
+          <Box className="topic1">
+            <Box className="studyArea textLimiterWidth">
+              <Typography variant="p" letterSpacing={4} fontWeight={400}>
+                Linguagens de programação
+              </Typography>
+              <Typography
+                variant="p"
+                letterSpacing={4}
+                fontWeight={900}
+                fontSize={"3.5vh"}
+                textTransform={"uppercase"}
+              >
+                Principais áreas de estudo
+              </Typography>
+            </Box>
+            <Box className="cards">
+              <Card image={js} alt="Framework Image" label="JavaScript" />
+              <Card image={react} alt="Framework Image" label="React" />
+              <Card
+                image={typescript}
+                alt="Framework Image"
+                label="Typescript"
+              />
+              <Card image={php} alt="Framework Image" label="PHP" />
+              <Card image={laravel} alt="Framework Image" label="Laravel" />
+              <Card image={docker} alt="Framework Image" label="Docker" />
+              <Card
+                image={aws}
+                alt="Framework Image"
+                label="Amazon Web Services"
+              />
+              <Card
+                image={gcp}
+                alt="Framework Image"
+                label="Google Cloud Platform"
+              />
+              <Card image={mysql} alt="Framework Image" label="MySQL" />
+              <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
+            </Box>
+          </Box>
         </Paper>
-<<<<<<< HEAD
         <Paper id="paper">
           <Box className="topic1 lineBreak">
             <Box className="studyArea textLimiterWidth">
@@ -187,6 +189,7 @@ export default function Home() {
                 component={Link}
                 to="/landingpage"
               />
+            <Box className="cards">
               <BigCard
                 image={DragAndDrop}
                 alt="Fake Trello"
@@ -218,10 +221,6 @@ export default function Home() {
             </Box>
           </Box>
         </Paper>
-      </section>
-=======
       </Box>
->>>>>>> ba09e1df0b41c4b1365714593b82710d565eb5b9
-    </Box>
   );
 }

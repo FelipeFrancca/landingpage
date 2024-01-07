@@ -5,22 +5,22 @@
 }
 
 ::selection {
-  background: #666666;
+  background: #fff;
   color: #000;
 }
 ::-moz-selection {
-  background: #666666;
+  background: #fff;
   color: #000;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 50px;
   width: 10px;
-  background-color: #666666;
+  background-color: #fff;
 }
 
 html {
@@ -28,7 +28,10 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: #fff;
-  z-index: 2;
+  position: relative;
+  background-color: rgb(48, 48, 48);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+  z-index: 1;
 }
