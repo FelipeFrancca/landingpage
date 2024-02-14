@@ -28,13 +28,16 @@ import postgre from "../../../assets/images/frameworks/postgre.png";
 import BigCard from "./components/bigCard";
 import DragAndDrop from "../../../assets/images/icons/drag&drop.png";
 import Loginpg from "../../../assets/images/icons/loginpg.png";
+import Particles from "./components/particles";
 
 //End
 
 export default function Home() {
   return (
     <Box className="homeConteiner">
-        <Box className="presentation">
+      <Particles />
+      <Box className="homeConteiner">
+        <Box className="myContacts">
           <Paper id="paper">
             <Avatar
               className="imageProfile"
@@ -76,6 +79,8 @@ export default function Home() {
               />
             </Box>
           </Paper>
+        </Box>
+        <Box className="aboutMe">
           <Paper id="paper">
             <Typography
               variant="p"
@@ -189,38 +194,40 @@ export default function Home() {
                 component={Link}
                 to="/landingpage"
               />
-            <Box className="cards">
-              <BigCard
-                image={DragAndDrop}
-                alt="Fake Trello"
-                label="Fake Trello"
-                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
-                component={Link}
-                to="/landingpage"
-              />
-              <BigCard
-                image={Loginpg}
-                alt="Pagina de login"
-                label="Pagina de login"
-                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
-                component={Link}
-                to="/landingpage"
-              />
-            </Box>
-            <Box>
-              <CardActionArea className="quickAcessGit">
-                <a
-                  href="https://github.com/FelipeFrancca?tab=repositories"
-                  className="linkTopic"
-                >
-                  <Typography variant="h6">
-                    Acesse aos meus repositórios
-                  </Typography>
-                </a>
-              </CardActionArea>
+              <Box className="cards">
+                <BigCard
+                  image={DragAndDrop}
+                  alt="Fake Trello"
+                  label="Fake Trello"
+                  label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+                  component={Link}
+                  to="/landingpage"
+                />
+                <BigCard
+                  image={Loginpg}
+                  alt="Pagina de login"
+                  label="Pagina de login"
+                  label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
+                  component={Link}
+                  to="/landingpage"
+                />
+              </Box>
+              <Box>
+                <CardActionArea className="quickAcessGit">
+                  <a
+                    href="https://github.com/FelipeFrancca?tab=repositories"
+                    className="linkTopic"
+                  >
+                    <Typography variant="h6">
+                      Acesse aos meus repositórios
+                    </Typography>
+                  </a>
+                </CardActionArea>
+              </Box>
             </Box>
           </Box>
         </Paper>
       </Box>
+    </Box>
   );
 }

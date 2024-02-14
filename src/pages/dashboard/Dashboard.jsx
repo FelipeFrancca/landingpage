@@ -5,9 +5,9 @@ import "../../assets/styles/Dashboard.css";
 
 function Dashboard() {
   return (
-      <Box>
-        <Outlet />
-      </Box>
+    <Box>
+      <Outlet />
+    </Box>
   );
 }
 export default Dashboard;

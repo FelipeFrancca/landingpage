@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, CardActionArea, CardMedia, Tooltip, Zoom, Typography } from '@mui/material';
-import "./bigCard.css";
 
 const SeuComponente = (props) => {
   return (
