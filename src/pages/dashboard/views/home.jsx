@@ -104,7 +104,7 @@ export default function Home() {
           </Paper>
         </Box>
         <Paper id="paper">
-          <Box className="topic1">
+          <Box className="topic2">
             <Box className="studyArea textLimiterWidth">
               <Typography variant="p" letterSpacing={4} fontWeight={400}>
                 Linguagens de programação
@@ -120,33 +120,35 @@ export default function Home() {
               </Typography>
             </Box>
             <Box className="cards">
+            <Box className="cards-slide">
               <Card image={js} alt="Framework Image" label="JavaScript" />
               <Card image={react} alt="Framework Image" label="React" />
-              <Card
-                image={typescript}
-                alt="Framework Image"
-                label="Typescript"
-              />
+              <Card image={typescript} alt="Framework Image" label="Typescript" />
               <Card image={php} alt="Framework Image" label="PHP" />
               <Card image={laravel} alt="Framework Image" label="Laravel" />
               <Card image={docker} alt="Framework Image" label="Docker" />
-              <Card
-                image={aws}
-                alt="Framework Image"
-                label="Amazon Web Services"
-              />
-              <Card
-                image={gcp}
-                alt="Framework Image"
-                label="Google Cloud Platform"
-              />
+              <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
+              <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
               <Card image={mysql} alt="Framework Image" label="MySQL" />
               <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
+            </Box>
+            <Box className="cards-slide">
+              <Card image={js} alt="Framework Image" label="JavaScript" />
+              <Card image={react} alt="Framework Image" label="React" />
+              <Card image={typescript} alt="Framework Image" label="Typescript" />
+              <Card image={php} alt="Framework Image" label="PHP" />
+              <Card image={laravel} alt="Framework Image" label="Laravel" />
+              <Card image={docker} alt="Framework Image" label="Docker" />
+              <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
+              <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
+              <Card image={mysql} alt="Framework Image" label="MySQL" />
+              <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
+            </Box>
             </Box>
           </Box>
         </Paper>
         <Paper id="paper">
-          <Box className="topic1 lineBreak">
+          {/** <Box className="topic1 lineBreak">
             <Box className="studyArea textLimiterWidth">
               <Typography variant="p" letterSpacing={4} fontWeight={400}>
                 Destaque
@@ -225,7 +227,7 @@ export default function Home() {
                 </CardActionArea>
               </Box>
             </Box>
-          </Box>
+          </Box>*/}
         </Paper>
       </Box>
     </Box>
