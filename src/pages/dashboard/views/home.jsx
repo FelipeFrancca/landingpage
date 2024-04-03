@@ -3,6 +3,7 @@ import { Avatar, Box, CardActionArea, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
 import imageProfile from "../../../assets/images/profileImage.jpg";
+import Swal from "sweetalert2";
 
 import wpp from "../../../assets/images/icons/wpp.png";
 import email from "../../../assets/images/icons/mail.png";
@@ -25,10 +26,12 @@ import postgre from "../../../assets/images/frameworks/postgre.png";
 //End
 
 //Big card area
-import BigCard from "./components/bigCard";
-import DragAndDrop from "../../../assets/images/icons/drag&drop.png";
-import Loginpg from "../../../assets/images/icons/loginpg.png";
-import Particles from "./components/particles";
+import BigCard from "./components/bigCard"
+import Particles from "./components/particles"
+import faketrello from "../../../assets/images/projects/faketrello.jpg";
+import loginpage from "../../../assets/images/projects/loginpage.jpg";
+import pageelina from "../../../assets/images/projects/pageelina.jpg";
+import parallax from "../../../assets/images/projects/parallax.jpg";
 
 //End
 
@@ -53,29 +56,25 @@ export default function Home() {
                 image={wpp}
                 alt="Framework Image"
                 label="WhatsApp"
-                component={Link}
-                to="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
+                link="https://api.whatsapp.com/send?phone=558487450440&text=Ola%20Felipe"
               />
               <CardTop
                 image={email}
                 alt="Mail"
                 label="E-mail"
-                component={Link}
-                to="mailto:profissional.felipesouza@gmail.com"
+                link="mailto:profissional.felipesouza@gmail.com"
               />
               <CardTop
                 image={linkedin}
                 alt="LinkedIn"
                 label="LinkedIn"
-                component={Link}
-                to="https://www.linkedin.com/in/felipe-frança-22542a254/"
+                link="https://www.linkedin.com/in/felipe-frança-22542a254/"
               />
               <CardTop
                 image={github}
                 alt="Contato mail"
                 label="GitHub"
-                component={Link}
-                to="https://github.com/FelipeFrancca"
+                link="https://github.com/FelipeFrancca"
               />
             </Box>
           </Paper>
@@ -94,11 +93,12 @@ export default function Home() {
             </Typography>
             <Box sx={{ marginTop: 2 }}>
               <Typography variant="p" letterSpacing={2} fontWeight={400}>
-                Construção de aplicações web com as frameworks React e
-                TypeScript que permitem criar interfaces bonitas e responsivas
-                para qualquer dispositivo. Proeficiência em PHP e laravel, que
-                possibilita desenvolver sistemas robustos e escaláveis,
-                atendendo às necessidades complexas e garantindo a segurança.
+                É um prazer tê-lo interessado em meus trabalhos! <br />
+                Lido com a construção de aplicações web, geralmente utilizando
+                frameworks de JavaScript e PHP, dando preferência ao
+                desenvolvimento em React.js, que se enquadra melhor na minha
+                premissa de entregar sistemas mais acessíveis e responsivos para
+                o usuário final.
               </Typography>
             </Box>
           </Paper>
@@ -120,35 +120,67 @@ export default function Home() {
               </Typography>
             </Box>
             <Box className="cards">
-            <Box className="cards-slide">
-              <Card image={js} alt="Framework Image" label="JavaScript" />
-              <Card image={react} alt="Framework Image" label="React" />
-              <Card image={typescript} alt="Framework Image" label="Typescript" />
-              <Card image={php} alt="Framework Image" label="PHP" />
-              <Card image={laravel} alt="Framework Image" label="Laravel" />
-              <Card image={docker} alt="Framework Image" label="Docker" />
-              <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
-              <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
-              <Card image={mysql} alt="Framework Image" label="MySQL" />
-              <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
-            </Box>
-            <Box className="cards-slide">
-              <Card image={js} alt="Framework Image" label="JavaScript" />
-              <Card image={react} alt="Framework Image" label="React" />
-              <Card image={typescript} alt="Framework Image" label="Typescript" />
-              <Card image={php} alt="Framework Image" label="PHP" />
-              <Card image={laravel} alt="Framework Image" label="Laravel" />
-              <Card image={docker} alt="Framework Image" label="Docker" />
-              <Card image={aws} alt="Framework Image" label="Amazon Web Services" />
-              <Card image={gcp} alt="Framework Image" label="Google Cloud Platform" />
-              <Card image={mysql} alt="Framework Image" label="MySQL" />
-              <Card image={postgre} alt="Framework Image" label="PostgreSQL" />
-            </Box>
+              <Box className="cards-slide">
+                <Card image={js} alt="Framework Image" label="JavaScript" />
+                <Card image={react} alt="Framework Image" label="React" />
+                <Card
+                  image={typescript}
+                  alt="Framework Image"
+                  label="Typescript"
+                />
+                <Card image={php} alt="Framework Image" label="PHP" />
+                <Card image={laravel} alt="Framework Image" label="Laravel" />
+                <Card image={docker} alt="Framework Image" label="Docker" />
+                <Card
+                  image={aws}
+                  alt="Framework Image"
+                  label="Amazon Web Services"
+                />
+                <Card
+                  image={gcp}
+                  alt="Framework Image"
+                  label="Google Cloud Platform"
+                />
+                <Card image={mysql} alt="Framework Image" label="MySQL" />
+                <Card
+                  image={postgre}
+                  alt="Framework Image"
+                  label="PostgreSQL"
+                />
+              </Box>
+              <Box className="cards-slide">
+                <Card image={js} alt="Framework Image" label="JavaScript" />
+                <Card image={react} alt="Framework Image" label="React" />
+                <Card
+                  image={typescript}
+                  alt="Framework Image"
+                  label="Typescript"
+                />
+                <Card image={php} alt="Framework Image" label="PHP" />
+                <Card image={laravel} alt="Framework Image" label="Laravel" />
+                <Card image={docker} alt="Framework Image" label="Docker" />
+                <Card
+                  image={aws}
+                  alt="Framework Image"
+                  label="Amazon Web Services"
+                />
+                <Card
+                  image={gcp}
+                  alt="Framework Image"
+                  label="Google Cloud Platform"
+                />
+                <Card image={mysql} alt="Framework Image" label="MySQL" />
+                <Card
+                  image={postgre}
+                  alt="Framework Image"
+                  label="PostgreSQL"
+                />
+              </Box>
             </Box>
           </Box>
         </Paper>
         <Paper id="paper">
-          {/** <Box className="topic1 lineBreak">
+          <Box className="topic1 lineBreak">
             <Box className="studyArea textLimiterWidth">
               <Typography variant="p" letterSpacing={4} fontWeight={400}>
                 Destaque
@@ -163,9 +195,9 @@ export default function Home() {
                 Projetos pessoais
               </Typography>
             </Box>
-            <Box className="cards bigCards">
+            <Box className="bigCards">
               <BigCard
-                image={DragAndDrop}
+                image={faketrello}
                 alt="Fake Trello"
                 label="Fake Trello"
                 label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
@@ -173,7 +205,7 @@ export default function Home() {
                 to="/landingpage"
               />
               <BigCard
-                image={Loginpg}
+                image={loginpage}
                 alt="Pagina de login"
                 label="Pagina de login"
                 label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
@@ -181,7 +213,7 @@ export default function Home() {
                 to="/landingpage"
               />
               <BigCard
-                image={DragAndDrop}
+                image={pageelina}
                 alt="Fake Trello"
                 label="Fake Trello"
                 label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
@@ -189,31 +221,13 @@ export default function Home() {
                 to="/landingpage"
               />
               <BigCard
-                image={Loginpg}
+                image={parallax}
                 alt="Pagina de login"
                 label="Pagina de login"
                 label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
                 component={Link}
                 to="/landingpage"
               />
-              <Box className="cards">
-                <BigCard
-                  image={DragAndDrop}
-                  alt="Fake Trello"
-                  label="Fake Trello"
-                  label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
-                  component={Link}
-                  to="/landingpage"
-                />
-                <BigCard
-                  image={Loginpg}
-                  alt="Pagina de login"
-                  label="Pagina de login"
-                  label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
-                  component={Link}
-                  to="/landingpage"
-                />
-              </Box>
               <Box>
                 <CardActionArea className="quickAcessGit">
                   <a
@@ -227,7 +241,7 @@ export default function Home() {
                 </CardActionArea>
               </Box>
             </Box>
-          </Box>*/}
+          </Box>
         </Paper>
       </Box>
     </Box>

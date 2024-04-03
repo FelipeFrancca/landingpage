@@ -8,9 +8,11 @@ const SeuComponente = (props) => {
         <CardActionArea
           sx={{
             display: 'flex',
+            flexWrap: 'wrap',
             justifyContent: 'center',
             alignContent: 'center',
-            width: '11em',
+            width: '30em',
+            height: '40em',
             backgroundColor: 'rgb(42, 42, 42)',
             padding: 2,
             position: 'relative',
@@ -31,7 +33,8 @@ const SeuComponente = (props) => {
               backgroundColor: 'rgba(0, 0, 0, 0.789)',
             },
             "@media (max-width: 767px)": {
-              width: "7em",
+              width: "20em",
+              height: "30em",
             }
           }}
         >

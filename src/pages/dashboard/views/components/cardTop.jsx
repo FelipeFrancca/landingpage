@@ -1,8 +1,25 @@
 import * as React from "react";
 import CardMedia from "@mui/material/CardMedia";
 import { Box, CardActionArea, Tooltip, Typography, Zoom } from "@mui/material";
+import Swal from 'sweetalert2'
 
 function ActionAreaCard(props) {
+  const handleClick = () => {
+    Swal.fire({
+      title: "Redirecionamento por link",
+      text: "Você será redirecionado para uma nova aba. Deseja continuar?",
+      icon: "info",
+      showCloseButton: true,
+      confirmButtonColor: "rgb(80, 4, 122)",
+      cancelButtonColor: "rgba(131, 9, 198, 1)",
+      confirmButtonText: "Sim, quero continuar!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open(props.link, '_blank');
+      }
+    });
+  };
+
   return (
     <Tooltip
       title={props.label}
@@ -16,6 +33,7 @@ function ActionAreaCard(props) {
       }}
     >
       <CardActionArea
+      onClick={handleClick}
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -33,8 +51,9 @@ function ActionAreaCard(props) {
             "@media (max-width: 767px)": {
               width: "5em",
             }
-        }}
+          }}
       >
+        
         <Typography sx={{fontSize: "90%"}}>{props.label}</Typography>
         <CardMedia
           component="img"
