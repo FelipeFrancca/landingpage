@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/landingpage/static/css/main.6fb2b16b.css",
-    "main.js": "/landingpage/static/js/main.16bd818a.js",
+    "main.css": "/landingpage/static/css/main.83c636e7.css",
+    "main.js": "/landingpage/static/js/main.fcb57f8c.js",
     "static/js/787.b64f6faf.chunk.js": "/landingpage/static/js/787.b64f6faf.chunk.js",
+    "static/media/parallax.jpg": "/landingpage/static/media/parallax.51786a8f11a6ea8754c6.jpg",
     "static/media/profileImage.jpg": "/landingpage/static/media/profileImage.27b4f55d333f5ba87e62.jpg",
+    "static/media/pageelina.jpg": "/landingpage/static/media/pageelina.6ddb8dd1fac609fceb46.jpg",
+    "static/media/faketrello.jpg": "/landingpage/static/media/faketrello.c0e2001a4bd3a485d7ea.jpg",
+    "static/media/loginpage.jpg": "/landingpage/static/media/loginpage.f32de8d31b7d9424945f.jpg",
     "static/media/postgre.png": "/landingpage/static/media/postgre.f18a0366b5b3ff8c3e9a.png",
     "static/media/mysql.png": "/landingpage/static/media/mysql.060ead14307ad82a6728.png",
     "static/media/aws.png": "/landingpage/static/media/aws.5d30b94c2f31a6816628.png",
@@ -13,10 +17,8 @@
     "static/media/react.png": "/landingpage/static/media/react.3bf6fb4b18b1f904676d.png",
     "static/media/wpp.png": "/landingpage/static/media/wpp.609cdc96e60197d25e4c.png",
     "static/media/github.png": "/landingpage/static/media/github.711e6699d36210acb6f1.png",
-    "static/media/loginpg.png": "/landingpage/static/media/loginpg.506b6db0cadbbee5b65d.png",
     "static/media/mail.png": "/landingpage/static/media/mail.e2f3d19506c44aae1e25.png",
     "static/media/linkedin.png": "/landingpage/static/media/linkedin.8d53e06fec1ad9f4e153.png",
-    "static/media/drag&drop.png": "/landingpage/static/media/drag&drop.c7c07b7b4bf57779cba7.png",
     "static/media/docker.png": "/landingpage/static/media/docker.c1f953a3ead577c05d04.png",
     "static/media/roboto-latin-500-normal.woff2": "/landingpage/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/landingpage/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -77,12 +79,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/landingpage/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/landingpage/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/landingpage/index.html",
-    "main.6fb2b16b.css.map": "/landingpage/static/css/main.6fb2b16b.css.map",
-    "main.16bd818a.js.map": "/landingpage/static/js/main.16bd818a.js.map",
+    "main.83c636e7.css.map": "/landingpage/static/css/main.83c636e7.css.map",
+    "main.fcb57f8c.js.map": "/landingpage/static/js/main.fcb57f8c.js.map",
     "787.b64f6faf.chunk.js.map": "/landingpage/static/js/787.b64f6faf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fb2b16b.css",
-    "static/js/main.16bd818a.js"
+    "static/css/main.83c636e7.css",
+    "static/js/main.fcb57f8c.js"
   ]
 }
