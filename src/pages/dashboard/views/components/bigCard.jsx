@@ -12,7 +12,6 @@ const SeuComponente = (props) => {
             justifyContent: 'center',
             alignContent: 'center',
             width: '30em',
-            height: '40em',
             backgroundColor: 'rgb(42, 42, 42)',
             padding: 2,
             position: 'relative',
@@ -30,7 +29,7 @@ const SeuComponente = (props) => {
               zIndex: 1,
             },
             '&:hover::before': {
-              backgroundColor: 'rgba(0, 0, 0, 0.789)',
+              backgroundColor: 'rgba(0, 0, 0, 0.851)',
             },
             "@media (max-width: 767px)": {
               width: "20em",
@@ -42,7 +41,7 @@ const SeuComponente = (props) => {
             component="img"
             height="auto"
             image={props.image}
-            alt="green iguana"
+            alt="bigCard"
             sx={{ display: 'flex' }}
           />
           <Typography
@@ -55,6 +54,7 @@ const SeuComponente = (props) => {
               position: 'absolute',
               width: '90%',
               height: '100%',
+              fontSize: "1.3em",
               top: 0,
               left: 0,
               textAlign: 'left',

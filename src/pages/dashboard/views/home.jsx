@@ -200,31 +200,31 @@ export default function Home() {
                 image={faketrello}
                 alt="Fake Trello"
                 label="Fake Trello"
-                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+                label2="Este é um projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no sistema Trello."
                 component={Link}
                 to="/landingpage"
               />
               <BigCard
                 image={loginpage}
-                alt="Pagina de login"
-                label="Pagina de login"
-                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
-                component={Link}
-                to="/landingpage"
-              />
-              <BigCard
-                image={pageelina}
-                alt="Fake Trello"
-                label="Fake Trello"
-                label2="Projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no Trello."
+                alt="Página de login"
+                label="Página de login"
+                label2="Uma simples pagina de login criada para praticar noções de design e interface do usuário."
                 component={Link}
                 to="/landingpage"
               />
               <BigCard
                 image={parallax}
-                alt="Pagina de login"
-                label="Pagina de login"
-                label2="Uma simples pagina de login criada para praticar noções de designer e interface do usuário."
+                alt="Parallax"
+                label="Parallax"
+                label2="Pratica de aplicação do efeito Parallax, que é uma técnica em que as imagens de plano de fundo movem-se mais lentamente que as imagens em primeiro plano, criando uma ilusão de profundidade em uma cena 2D."
+                component={Link}
+                to="/landingpage"
+              />
+              <BigCard
+                image={pageelina}
+                alt="Portfolio simples"
+                label="Portfolio simples"
+                label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda"
                 component={Link}
                 to="/landingpage"
               />
