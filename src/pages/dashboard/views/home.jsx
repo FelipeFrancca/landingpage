@@ -35,7 +35,24 @@ import parallax from "../../../assets/images/projects/parallax.jpg";
 
 //End
 
-export default function Home() {
+export default function Home(alink) {
+  const handleClick = () => {
+    Swal.fire({
+      title: "Redirecionamento por link",
+      text: "Você será redirecionado para uma nova aba. Deseja continuar?",
+      icon: "info",
+      showCloseButton: true,
+      confirmButtonColor: "rgb(80, 4, 122)",
+      cancelButtonColor: "rgba(131, 9, 198, 1)",
+      confirmButtonText: "Sim, quero continuar!"
+    }).then((result) => {
+      var alink = "https://github.com/FelipeFrancca?tab=repositories"
+      if (result.isConfirmed) {
+        window.open(alink, '_blank');
+      }
+    });
+  };
+
   return (
     <Box className="homeConteiner">
       <Particles />
@@ -224,20 +241,19 @@ export default function Home() {
                 image={pageelina}
                 alt="Portfolio simples"
                 label="Portfolio simples"
-                label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda"
+                label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda."
                 component={Link}
                 to="/landingpage"
               />
               <Box>
-                <CardActionArea className="quickAcessGit">
-                  <a
-                    href="https://github.com/FelipeFrancca?tab=repositories"
-                    className="linkTopic"
-                  >
+                <CardActionArea
+                className="quickAcessGit"
+                onClick={handleClick}
+                alink
+                >
                     <Typography variant="h6">
                       Acesse aos meus repositórios
                     </Typography>
-                  </a>
                 </CardActionArea>
               </Box>
             </Box>

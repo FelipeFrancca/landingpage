@@ -121,6 +121,12 @@ section {
   font-size: 50px;
   font-weight: 900;
 }
+
+.quickAcessGit {
+  border: solid red;
+  width: 500px;
+}
+
 .quickAcessGit:hover {
   opacity: 60%;
 }
