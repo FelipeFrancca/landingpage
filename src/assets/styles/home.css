@@ -27,11 +27,12 @@ section {
 .homeConteiner {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   gap: 30px;
   z-index: 2;
+  margin: 10px;
 }
 
 .myContacts {
@@ -96,8 +97,8 @@ section {
 .cards {
   display: flex;
   flex-direction: row;
-  width: 99%;
   overflow: hidden;
+  width: 99%;
   z-index: 2;
   gap: 40px;
   padding: 10px;
@@ -131,7 +132,7 @@ section {
   opacity: 60%;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
   #paper {
     padding: 2rem;
     padding-left: 5rem;

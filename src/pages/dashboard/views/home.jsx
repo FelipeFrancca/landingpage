@@ -1,6 +1,5 @@
 import React from "react";
 import { Avatar, Box, CardActionArea, Paper, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 import "../../../assets/styles/home.css";
 import imageProfile from "../../../assets/images/profileImage.jpg";
 import Swal from "sweetalert2";
@@ -31,7 +30,7 @@ import Particles from "./components/particles"
 import faketrello from "../../../assets/images/projects/faketrello.jpg";
 import loginpage from "../../../assets/images/projects/loginpage.jpg";
 import pageelina from "../../../assets/images/projects/pageelina.jpg";
-import parallax from "../../../assets/images/projects/parallax.jpg";
+import parallaxScrolling from "../../../assets/images/projects/parallaxScrolling.jpg";
 
 //End
 
@@ -218,33 +217,34 @@ export default function Home(alink) {
                 alt="Fake Trello"
                 label="Fake Trello"
                 label2="Este é um projeto de kanban com as funcionalidades de drag an drop, simulando as ferramentas presentes no sistema Trello."
-                component={Link}
-                to="/landingpage"
+                label3="Acessar projeto"
+                link="https://felipefrancca.github.io/fakeTrello/"
               />
               <BigCard
                 image={loginpage}
                 alt="Página de login"
                 label="Página de login"
                 label2="Uma simples pagina de login criada para praticar noções de design e interface do usuário."
-                component={Link}
-                to="/landingpage"
+                label3="Acessar projeto"
+                link="https://felipefrancca.github.io/loginPage/"
               />
               <BigCard
-                image={parallax}
+                image={parallaxScrolling}
                 alt="Parallax"
                 label="Parallax"
                 label2="Pratica de aplicação do efeito Parallax, que é uma técnica em que as imagens de plano de fundo movem-se mais lentamente que as imagens em primeiro plano, criando uma ilusão de profundidade em uma cena 2D."
-                component={Link}
-                to="/landingpage"
+                label3="Acessar projeto"
+                link="https://felipefrancca.github.io/parallaxScrolling/src/index.html"
               />
               <BigCard
                 image={pageelina}
                 alt="Portfolio simples"
                 label="Portfolio simples"
                 label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda."
-                component={Link}
-                to="/landingpage"
+                label3="Acessar projeto"
+                link="https://felipefrancca.github.io/pageElina/"
               />
+            </Box>
               <Box>
                 <CardActionArea
                 className="quickAcessGit"
@@ -256,7 +256,6 @@ export default function Home(alink) {
                     </Typography>
                 </CardActionArea>
               </Box>
-            </Box>
           </Box>
         </Paper>
       </Box>
