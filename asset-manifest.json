@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/landingpage/static/css/main.e1a6d5d8.css",
-    "main.js": "/landingpage/static/js/main.227bf9b4.js",
+    "main.css": "/landingpage/static/css/main.410e3b3a.css",
+    "main.js": "/landingpage/static/js/main.1e818f9d.js",
     "static/js/787.b64f6faf.chunk.js": "/landingpage/static/js/787.b64f6faf.chunk.js",
-    "static/media/parallax.jpg": "/landingpage/static/media/parallax.51786a8f11a6ea8754c6.jpg",
+    "static/media/parallaxScrolling.jpg": "/landingpage/static/media/parallaxScrolling.51786a8f11a6ea8754c6.jpg",
     "static/media/profileImage.jpg": "/landingpage/static/media/profileImage.27b4f55d333f5ba87e62.jpg",
     "static/media/pageelina.jpg": "/landingpage/static/media/pageelina.6ddb8dd1fac609fceb46.jpg",
     "static/media/faketrello.jpg": "/landingpage/static/media/faketrello.c0e2001a4bd3a485d7ea.jpg",
@@ -79,12 +79,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/landingpage/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/landingpage/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/landingpage/index.html",
-    "main.e1a6d5d8.css.map": "/landingpage/static/css/main.e1a6d5d8.css.map",
-    "main.227bf9b4.js.map": "/landingpage/static/js/main.227bf9b4.js.map",
+    "main.410e3b3a.css.map": "/landingpage/static/css/main.410e3b3a.css.map",
+    "main.1e818f9d.js.map": "/landingpage/static/js/main.1e818f9d.js.map",
     "787.b64f6faf.chunk.js.map": "/landingpage/static/js/787.b64f6faf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1a6d5d8.css",
-    "static/js/main.227bf9b4.js"
+    "static/css/main.410e3b3a.css",
+    "static/js/main.1e818f9d.js"
   ]
 }
