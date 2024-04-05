@@ -25,8 +25,8 @@ import postgre from "../../../assets/images/frameworks/postgre.png";
 //End
 
 //Big card area
-import BigCard from "./components/bigCard"
-import Particles from "./components/particles"
+import BigCard from "./components/bigCard";
+import Particles from "./components/particles";
 import faketrello from "../../../assets/images/projects/faketrello.jpg";
 import loginpage from "../../../assets/images/projects/loginpage.jpg";
 import pageelina from "../../../assets/images/projects/pageelina.jpg";
@@ -43,11 +43,11 @@ export default function Home(alink) {
       showCloseButton: true,
       confirmButtonColor: "rgb(80, 4, 122)",
       cancelButtonColor: "rgba(131, 9, 198, 1)",
-      confirmButtonText: "Sim, quero continuar!"
+      confirmButtonText: "Sim, quero continuar!",
     }).then((result) => {
-      var alink = "https://github.com/FelipeFrancca?tab=repositories"
+      var alink = "https://github.com/FelipeFrancca?tab=repositories";
       if (result.isConfirmed) {
-        window.open(alink, '_blank');
+        window.open(alink, "_blank");
       }
     });
   };
@@ -210,6 +210,19 @@ export default function Home(alink) {
               >
                 Projetos pessoais
               </Typography>
+              <Typography
+                variant="p"
+                fontWeight={900}
+                fontSize={"2vh"}
+                sx={{
+                  display: "none",
+                  "@media (max-width: 767px)": {
+                    display: "contents",
+                  },
+                }}
+              >
+                (Aviso mobile: clique nos componentes para acessar as informações)
+              </Typography>
             </Box>
             <Box className="bigCards">
               <BigCard
@@ -245,17 +258,17 @@ export default function Home(alink) {
                 link="https://felipefrancca.github.io/pageElina/"
               />
             </Box>
-              <Box>
-                <CardActionArea
+            <Box>
+              <CardActionArea
                 className="quickAcessGit"
                 onClick={handleClick}
                 alink
-                >
-                    <Typography variant="h6">
-                      Acesse aos meus repositórios
-                    </Typography>
-                </CardActionArea>
-              </Box>
+              >
+                <Typography variant="h6">
+                  Acesse aos meus repositórios
+                </Typography>
+              </CardActionArea>
+            </Box>
           </Box>
         </Paper>
       </Box>
