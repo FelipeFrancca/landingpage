@@ -30,7 +30,7 @@ import Particles from "./components/particles";
 import faketrello from "../../../assets/images/projects/faketrello.jpg";
 import loginpage from "../../../assets/images/projects/loginpage.jpg";
 import pageelina from "../../../assets/images/projects/pageelina.jpg";
-import parallaxScrolling from "../../../assets/images/projects/parallaxScrolling.jpg";
+import listOfCharacters from "../../../assets/images/projects/listOfCharacters.png";
 
 //End
 
@@ -242,18 +242,18 @@ export default function Home(alink) {
                 link="https://felipefrancca.github.io/loginPage/"
               />
               <BigCard
-                image={parallaxScrolling}
-                alt="Parallax"
-                label="Parallax"
-                label2="Pratica de aplicação do efeito Parallax, que é uma técnica em que as imagens de plano de fundo movem-se mais lentamente que as imagens em primeiro plano, criando uma ilusão de profundidade em uma cena 2D."
+                image={listOfCharacters}
+                alt="Consumo de API Start Wars"
+                label="Consumo de API Start Wars"
+                label2="Praticando consumo de API contendo uma lista de personagens do filme Start wars, onde existe informações públicas e privadas, sendo possivel acessar as informações privadas através de um login com dados mocados."
                 label3="Acessar projeto"
-                link="https://felipefrancca.github.io/parallaxScrolling/src/index.html"
+                link="https://felipefrancca.github.io/listOfCharacters/"
               />
               <BigCard
                 image={pageelina}
                 alt="Portfolio simples"
                 label="Portfolio simples"
-                label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda."
+                label2="Projeto de portfolio simples elaborado para minha esposa disvulgar seus links de revenda de cosmeticos, utilizando axios, useEffect e useState para consumir uma planilha do google sheets."
                 label3="Acessar projeto"
                 link="https://felipefrancca.github.io/pageElina/"
               />
